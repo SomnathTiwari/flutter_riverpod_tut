@@ -20,7 +20,8 @@ class ErrorState extends UserState {
   ErrorState(this.message);
 }
 
-final fetchProvider = StateNotifierProvider<FetchNotifier, UserState>(
+final fetchProvider =
+    StateNotifierProvider.autoDispose<FetchNotifier, UserState>(
   (ref) => FetchNotifier(),
 );
 
