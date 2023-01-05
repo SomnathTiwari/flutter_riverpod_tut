@@ -5,6 +5,7 @@ import 'package:flutter_riverpod_tut/all_provider_demo/provider_demo/provider_de
 import 'package:flutter_riverpod_tut/all_provider_demo/state_notifier_provider_demo/state_notifier_provider_demo.dart';
 import 'package:flutter_riverpod_tut/all_provider_demo/state_provider_demo/state_provider_demo.dart';
 import 'package:flutter_riverpod_tut/all_provider_demo/stream_provider_demo/stream_provider_demo.dart';
+import 'package:flutter_riverpod_tut/fetching_data_demo/fetching_data_demo.dart';
 
 import 'all_provider_demo/changenotifier_provider_demo/change_notifier_provider.demo.dart';
 
@@ -44,7 +45,7 @@ class MyHomePage extends StatelessWidget {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const ProviderDemo(),
+                  builder: (context) => const FetchingDemo(),
                 ));
           },
           child: const Text("Click Here to See the Example"),
